@@ -1,0 +1,82 @@
+body {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1 {
+  text-align: center;
+
+}
+
+#startScreen {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#lvl1 {
+  float: left;
+}
+
+.stack {
+  float: left;
+  padding-right: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+#highScore {
+  padding: 20px 0;
+}
+
+#gameHeader {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  width: 384px;
+  padding: 8px;
+}
+
+.headerSection {
+  float: left;
+  width: 33%;
+}
+
+#levelHeader {
+  width: 384px;
+  /*padding: 8px;*/
+}
+
+.levelSection {
+  float: left;
+  width: 50%;
+}
+
+#highscore {
+  margin-bottom: 10px;
+}
+
+button {
+  border: 1px solid #aaa;
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.topPadded {
+  padding-top: 5px;
+}

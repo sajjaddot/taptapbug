@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tap Tap Bug</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Tap Tap bug</h1>
+
+<div id="startScreen">
+  <div id="level">
+    <div class="stack">Level:</div>
+    <div class="stack center">
+      <input id="lvl1" type="radio" name="group" onchange="level1selector()"></input>
+      <label for="lvl1" class="block">1</label>
+    </div>
+    <div class="stack center">
+      <input id="lvl2" type="radio" name="group" onchange="level2selector()"></input>
+      <label for="lvl1" class="block">2</label>
+    </div>
+  </div>
+  <div id="highScore" class="clearfix">
+    <div id="score">High Score: 0</div>
+  </div>
+  <div class="center">
+    <button id="gameStartBtn" type="button" onclick="startGame()">Start</button>
+  </div>
+</div>
+
+<div id="gameScreen" style="display:none">
+
+  <div id="levelHeader">
+    <div class="levelSection">
+      <div id="highscore">High Score: 0</div>
+    </div>
+    <div class="levelSection">
+       <div id="levelboard">Level - 0</div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div id="gameHeader">
+    <div class="headerSection topPadded">
+      <div id="countdownTimer">60 sec</div>
+    </div>
+    <div class="headerSection center">
+      <button id="pauseBtn" type="button" onclick="toggleGame()">Pause</button>
+    </div>
+    <div class="headerSection right topPadded">
+      <div id="scoreBoard">Score: 0</div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="clearfix content" id="gameContent">
+      <canvas id="game" width = "400" height = "600" style="border:1px solid #d3d3d3;">
+  	Your browser does not support the canvas element.    	
+      </canvas>
+  </div>
+</div>
+
+<div id="endScreen" style="display:none">
+  <p>Game Over!</p>
+  <p>
+    Your score is: <span id="score_inline">0</span>
+  </p>
+  <button id="restartBtn" type="button" onclick="startGame()">Restart</button>
+  <button id="exitBtn" type="button" onclick="startOver()">Exit</button>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
